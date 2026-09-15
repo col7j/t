@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامج فن وألوان - جمعية التنمية الاهلية بعوالي المدينة المنورة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"IBM Plex Sans Arabic"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#166156',
+                            primary: '#21A38E',
+                            accent: '#D2A16E',
+                            deep: '#AE7848',
+                            bg: '#F8FAFA',
+                            card: '#FFFFFF',
+                            text: '#2C3E3B',
+                            muted: '#6C7E7B',
+                            border: '#D3E2DF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            background-color: #F8FAFA;
+            color: #2C3E3B;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 30px -5px rgba(33, 163, 142, 0.05), 0 4px 12px -2px rgba(0, 0, 0, 0.02);
+        }
+        .input-focus:focus {
+            border-color: #21A38E;
+            box-shadow: 0 0 0 4px rgba(33, 163, 142, 0.12);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-[#21A38E] selection:text-white">
+
+    <header class="sticky top-0 z-50 glass-panel border-b border-[#D3E2DF]/60 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-11 h-11 rounded-2xl bg-[#166156]/10 flex items-center justify-center overflow-hidden shadow-sm border border-[#166156]/20">
+                    <img src="https://cdn.phototourl.com/free/2026-09-15-fdc29d10-82b2-4713-a015-b86d8c04401d.png" alt="أيقونة فن وألوان" class="w-7 h-7 object-contain" onerror="this.src='https://placehold.co/44x44/166156/ffffff?text=🎨'">
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight text-[#166156] block">برنامج فن وألوان</span>
+                    <span class="text-xs text-[#6C7E7B] font-medium block">جمعية التنمية الاهلية بعوالي المدينة المنورة</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-3">
+                <span class="px-3.5 py-1.5 rounded-full bg-[#D2A16E]/15 text-[#AE7848] text-xs font-semibold">
+                    <i class="fa-solid fa-gift ml-1.5"></i> مجاناً بمناسبة اليوم الوطني
+                </span>
+                <a href="#registerSection" class="px-5 py-2.5 bg-[#21A38E] hover:bg-[#166156] text-white text-sm font-medium rounded-full transition shadow-md shadow-[#21A38E]/20">
+                    سجل الآن
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl w-full mx-auto px-4 sm:px-6 py-12 lg:py-16">
+        
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#166156]/10 text-[#166156] text-xs font-semibold mb-6 tracking-wide">
+                <i class="fa-solid fa-sparkles"></i> برعاية كريمة من مؤسسة سالم بن محفوظ الاهلية
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-[#166156] mb-6 leading-tight">
+                الحياة عبارة عن لوحة ألوانها متنوعة 🏞️
+            </h1>
+            <p class="text-base sm:text-lg text-[#6C7E7B] max-w-3xl mx-auto leading-relaxed">
+                ونحن نرسم على هذه اللوحة بأقوالنا وأفعالنا؛ لأن الرسم طريقة مختلفة لكتابة الذكريات والمشاعر والأحاسيس. والرسام ينسج عالمه بخيال واسع لا يمكن أن يعيشه في الواقع. معاً سنرسم لوحات تنبض بالمشاعر والأحاسيس والحب 🇸🇦🖍️
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <!-- Card 1: Trainer & Team -->
+            <div class="bg-white rounded-3xl p-6 soft-shadow border border-[#D3E2DF]/50 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-[#21A38E]/10 text-[#21A38E] flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#166156] mb-2">إشراف وإدارة الورشة</h3>
+                    <p class="text-sm text-[#6C7E7B] leading-relaxed mb-4">
+                        مع الفنانة المبدعة <strong class="text-[#2C3E3B]">وفاء يونس فلاته</strong>، المدربة بأكاديمية تطوير الذات.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-gray-100 text-xs text-[#6C7E7B] font-medium">
+                    بتنظيم فريق الفوز التابع لجمعية التنمية الاهلية بعوالي المدينة المنورة.
+                </div>
+            </div>
+
+            <!-- Card 2: Date & Time -->
+            <div class="bg-white rounded-3xl p-6 soft-shadow border border-[#D3E2DF]/50 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-[#D2A16E]/15 text-[#AE7848] flex items-center justify-center text-xl mb-4">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#166156] mb-2">الموعد والتوقيت</h3>
+                    <ul class="text-sm text-[#6C7E7B] space-y-2 mb-4">
+                        <li><i class="fa-solid fa-calendar-check text-[#21A38E] ml-2"></i> السبت: 8 / 4 / 1448 هـ</li>
+                        <li><i class="fa-solid fa-calendar-day text-[#21A38E] ml-2"></i> الموافق: 19 / 9 / 2026 م</li>
+                        <li><i class="fa-solid fa-clock text-[#21A38E] ml-2"></i> من 4:00 عصراً إلى 7:00 مساءً</li>
+                    </ul>
+                </div>
+                <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                    <span class="text-xs line-through text-gray-400">50 ريال</span>
+                    <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-semibold rounded-full">مجاناً بمناسبة اليوم الوطني</span>
+                </div>
+            </div>
+
+            <!-- Card 3: Target Audience & Location -->
+            <div class="bg-white rounded-3xl p-6 soft-shadow border border-[#D3E2DF]/50 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-[#166156]/10 text-[#166156] flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#166156] mb-2">الفئات المستهدفة</h3>
+                    <ul class="text-sm text-[#6C7E7B] space-y-2 mb-4">
+                        <li><i class="fa-solid fa-child text-[#D2A16E] ml-2"></i> البنات: من 5 سنوات إلى 15 سنة والأمهات</li>
+                        <li><i class="fa-solid fa-child-reaching text-[#D2A16E] ml-2"></i> الأولاد: من 5 سنوات إلى 8 سنوات</li>
+                    </ul>
+                </div>
+                <div class="pt-4 border-t border-gray-100 text-xs text-[#6C7E7B]">
+                    ورشة تفاعلية لاكتشاف المواهب وتفريغ الطاقات الإبداعية.
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-[#166156] to-[#21A38E] rounded-3xl p-8 text-white mb-16 shadow-lg relative overflow-hidden">
+            <div class="relative z-10 max-w-2xl">
+                <h3 class="text-2xl font-bold mb-3">فكرة وأهداف البرنامج الإبداعي</h3>
+                <p class="text-sm sm:text-base text-gray-100 leading-relaxed mb-4">
+                    تجربة قصيرة تؤهل المتطوعات لاستخدام مهارات التلوين والفنون البسيطة في الفعاليات والأنشطة المجتمعية. نسعى لمعالجة قلة البرامج الفنية الموجهة للأطفال التي تساعدهم على اكتشاف مواهبهم الكامنة وتفريغ طاقاتهم الإبداعية بطريقة ملهمة.
+                </p>
+                <div class="inline-flex items-center gap-2 text-xs bg-white/10 px-3 py-1.5 rounded-xl backdrop-blur-md font-medium">
+                    <i class="fa-solid fa-heart text-[#D2A16E]"></i> صُممت الورشة خصيصاً لخلق بيئة فنية مبهجة ومميزة
+                </div>
+            </div>
+        </div>
+
+        <div id="registerSection" class="bg-white rounded-3xl p-6 sm:p-10 soft-shadow border border-[#D3E2DF]/50 relative overflow-hidden">
+            
+            <div class="text-center mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-[#166156] mb-2">استمارة التسجيل في ورش الفنون</h2>
+                <p class="text-sm text-[#6C7E7B]">املأ البيانات أدناه لاختيار الورشة المرغوب بها وإتمام التسجيل بنجاح.</p>
+            </div>
+
+            <!-- Success Notification Overlay -->
+            <div id="successMessage" class="hidden absolute inset-0 bg-white/95 backdrop-blur-md z-20 flex flex-col items-center justify-center text-center p-8 transition-all">
+                <div class="w-16 h-16 bg-[#21A38E]/15 text-[#21A38E] rounded-full flex items-center justify-center text-3xl mb-4 animate-bounce shadow-sm">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-[#166156] mb-2">تم إرسال ردك بنجاح!</h3>
+                <p class="text-[#6C7E7B] max-w-md mb-6">شكراً لانضمامك إلى برنامج فن وألوان. تم إرسال بياناتك بنجاح إلى النظام وننتظر مشاركتك الإبداعية معنا.</p>
+                <button onclick="resetForm()" class="px-6 py-2.5 bg-[#166156] text-white text-sm font-medium rounded-full hover:bg-[#21A38E] transition shadow-md">
+                    تسجيل مشاركة أخرى
+                </button>
+            </div>
+
+            <!-- Google Form Action Endpoint -->
+            <form id="artForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdwcb7I6pIpc4UZqQ3MW-Q-6MimBtyLq4gQzEhpMYVwXKhJ_w/formResponse" target="hidden_iframe" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                
+                <!-- Hidden iframe to bypass CORS -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { showSuccessState(); }"></iframe>
+
+                <!-- Name Field -->
+                <div class="space-y-2">
+                    <label for="nameInput" class="block text-sm font-bold text-[#2C3E3B]">
+                        الاسم <span class="text-red-500">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-[#6C7E7B]">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <input type="text" id="nameInput" name="entry.836013175" required placeholder="أدخل اسمك الثلاثي" 
+                            class="w-full pl-4 pr-11 py-3.5 bg-[#F8FAFA] border border-[#D3E2DF] rounded-2xl text-[#2C3E3B] text-sm focus:outline-none input-focus transition-all">
+                    </div>
+                </div>
+
+                <!-- Age Field -->
+                <div class="space-y-2">
+                    <label for="ageInput" class="block text-sm font-bold text-[#2C3E3B]">
+                        العمر <span class="text-red-500">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-[#6C7E7B]">
+                            <i class="fa-regular fa-id-card"></i>
+                        </span>
+                        <input type="text" id="ageInput" name="entry.613067342" required placeholder="مثال: 9 سنوات أو أم" 
+                            class="w-full pl-4 pr-11 py-3.5 bg-[#F8FAFA] border border-[#D3E2DF] rounded-2xl text-[#2C3E3B] text-sm focus:outline-none input-focus transition-all">
+                    </div>
+                </div>
+
+                <!-- WhatsApp Phone Field -->
+                <div class="space-y-2">
+                    <label for="phoneInput" class="block text-sm font-bold text-[#2C3E3B]">
+                        رقم التواصل (واتس اب) <span class="text-red-500">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-[#6C7E7B]">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </span>
+                        <input type="tel" id="phoneInput" name="entry.1209885026" required placeholder="05xxxxxxxx" dir="ltr"
+                            class="w-full pr-4 pl-11 py-3.5 bg-[#F8FAFA] border border-[#D3E2DF] rounded-2xl text-[#2C3E3B] text-sm focus:outline-none input-focus text-right transition-all">
+                    </div>
+                </div>
+
+                <!-- Workshop Selection Radio Options -->
+                <div class="space-y-3">
+                    <label class="block text-sm font-bold text-[#2C3E3B]">
+                        اسم الورشة المرغوب بها: <span class="text-red-500">*</span>
+                    </label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <label class="cursor-pointer border border-[#D3E2DF] rounded-2xl p-4 flex items-center justify-between hover:border-[#21A38E] transition bg-[#F8FAFA]/60 group has-[:checked]:border-[#21A38E] has-[:checked]:bg-[#21A38E]/10">
+                            <span class="text-sm font-medium text-[#2C3E3B]">الورق الملون والفلين</span>
+                            <input type="radio" name="entry.885325422" value="الورق الملون والفلين" required class="text-[#21A38E] focus:ring-[#21A38E]">
+                        </label>
+                        <label class="cursor-pointer border border-[#D3E2DF] rounded-2xl p-4 flex items-center justify-between hover:border-[#21A38E] transition bg-[#F8FAFA]/60 group has-[:checked]:border-[#21A38E] has-[:checked]:bg-[#21A38E]/10">
+                            <span class="text-sm font-medium text-[#2C3E3B]">كرتون والفوم</span>
+                            <input type="radio" name="entry.885325422" value="كرتون والفوم" class="text-[#21A38E] focus:ring-[#21A38E]">
+                        </label>
+                        <label class="cursor-pointer border border-[#D3E2DF] rounded-2xl p-4 flex items-center justify-between hover:border-[#21A38E] transition bg-[#F8FAFA]/60 group has-[:checked]:border-[#21A38E] has-[:checked]:bg-[#21A38E]/10">
+                            <span class="text-sm font-medium text-[#2C3E3B]">الحبوب والفستق</span>
+                            <input type="radio" name="entry.885325422" value="الحبوب والفستق" class="text-[#21A38E] focus:ring-[#21A38E]">
+                        </label>
+                        <label class="cursor-pointer border border-[#D3E2DF] rounded-2xl p-4 flex items-center justify-between hover:border-[#21A38E] transition bg-[#F8FAFA]/60 group has-[:checked]:border-[#21A38E] has-[:checked]:bg-[#21A38E]/10">
+                            <span class="text-sm font-medium text-[#2C3E3B]">الخرز</span>
+                            <input type="radio" name="entry.885325422" value="الخرز" class="text-[#21A38E] focus:ring-[#21A38E]">
+                        </label>
+                        <label class="cursor-pointer border border-[#D3E2DF] rounded-2xl p-4 flex items-center justify-between hover:border-[#21A38E] transition bg-[#F8FAFA]/60 group has-[:checked]:border-[#21A38E] has-[:checked]:bg-[#21A38E]/10">
+                            <span class="text-sm font-medium text-[#2C3E3B]">عيدان الخشب</span>
+                            <input type="radio" name="entry.885325422" value="عيدان الخشب" class="text-[#21A38E] focus:ring-[#21A38E]">
+                        </label>
+                        <label class="cursor-pointer border border-[#D3E2DF] rounded-2xl p-4 flex items-center justify-between hover:border-[#21A38E] transition bg-[#F8FAFA]/60 group has-[:checked]:border-[#21A38E] has-[:checked]:bg-[#21A38E]/10">
+                            <span class="text-sm font-medium text-[#2C3E3B]">الخيوط والشرائط</span>
+                            <input type="radio" name="entry.885325422" value="الخيوط والشرائط" class="text-[#21A38E] focus:ring-[#21A38E]">
+                        </label>
+                        <label class="cursor-pointer border border-[#D3E2DF] rounded-2xl p-4 flex items-center justify-between hover:border-[#21A38E] transition bg-[#F8FAFA]/60 group has-[:checked]:border-[#21A38E] has-[:checked]:bg-[#21A38E]/10">
+                            <span class="text-sm font-medium text-[#2C3E3B]">الملاعق والكاسات والصحون البلاستيكية</span>
+                            <input type="radio" name="entry.885325422" value="الملاعق والكاسات والصحون البلاستيكية" class="text-[#21A38E] focus:ring-[#21A38E]">
+                        </label>
+                        <label class="cursor-pointer border border-[#D3E2DF] rounded-2xl p-4 flex items-center justify-between hover:border-[#21A38E] transition bg-[#F8FAFA]/60 group has-[:checked]:border-[#21A38E] has-[:checked]:bg-[#21A38E]/10">
+                            <span class="text-sm font-medium text-[#2C3E3B]">توزيعات المناسبات</span>
+                            <input type="radio" name="entry.885325422" value="توزيعات المناسبات" class="text-[#21A38E] focus:ring-[#21A38E]">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-4">
+                    <button type="submit" id="submitBtn" class="w-full py-4 px-6 bg-[#21A38E] hover:bg-[#166156] text-white font-bold rounded-2xl shadow-lg shadow-[#21A38E]/20 transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>إرسال طلب التسجيل</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+
+            </form>
+
+            <!-- Contact & Location Info below registration -->
+            <div class="mt-8 pt-6 border-t border-[#D3E2DF]/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#6C7E7B]">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-[#21A38E]"></i>
+                    <span>للتواصل والاستفسار:</span>
+                    <a href="tel:0537780407" dir="ltr" class="font-bold text-[#2C3E3B] hover:text-[#21A38E] transition">0537780407</a>
+                </div>
+                <div>
+                    <a href="https://maps.google.com/?q=24.450022,39.619968" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#21A38E]/10 hover:bg-[#21A38E]/20 text-[#166156] font-semibold rounded-xl transition flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i> موقع الفعالية (خرائط جوجل)
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-white border-t border-[#D3E2DF]/60 py-10 mt-16">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-right">
+                <p class="text-sm text-[#2C3E3B] font-medium mb-1">
+                    جميع الحقوق محفوظة بواسطة | <a href="https://mol7j.com" target="_blank" rel="noopener noreferrer" class="text-[#21A38E] hover:underline font-bold transition">محمد الحاج</a>
+                </p>
+                <p class="text-xs text-[#6C7E7B]">جمعية التنمية الاهلية بعوالي المدينة المنورة &copy; 2026</p>
+            </div>
+            
+            <div class="flex items-center space-x-6 space-x-reverse text-xl text-[#6C7E7B]">
+                <a href="https://www.instagram.com/tnmiaaorgsa" target="_blank" rel="noopener noreferrer" class="hover:text-[#21A38E] transition p-2" aria-label="انستغرام جمعية التنمية">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/tnmiaaorgsa" target="_blank" rel="noopener noreferrer" class="hover:text-[#21A38E] transition p-2" aria-label="تويتر/إكس جمعية التنمية">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.tnmiaa.org.sa/" target="_blank" rel="noopener noreferrer" class="hover:text-[#21A38E] transition p-2" aria-label="الموقع الرسمي">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let submitted = false;
+
+        function handleFormSubmit(event) {
+            submitted = true;
+            const btn = document.getElementById('submitBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner animate-spin"></i> جاري إرسال الرد...';
+            
+            setTimeout(() => {
+                if(submitted) {
+                    showSuccessState();
+                }
+            }, 2500);
+        }
+
+        function showSuccessState() {
+            document.getElementById('successMessage').classList.remove('hidden');
+            const btn = document.getElementById('submitBtn');
+            btn.disabled = false;
+            btn.innerHTML = '<span>إرسال طلب التسجيل</span><i class="fa-solid fa-arrow-left"></i>';
+        }
+
+        function resetForm() {
+            document.getElementById('artForm').reset();
+            document.getElementById('successMessage').classList.add('hidden');
+            submitted = false;
+        }
+    </script>
+</body>
+</html>
